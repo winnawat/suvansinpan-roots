@@ -11,7 +11,6 @@
     <div class="container">
       <h1>Family/Organization Tree Maker Example</h1>
       <div id="myTree">
-        <h1>Container myTree</h1>
       </div>
     <script type="text/javascript">
       let tree = {
@@ -23,7 +22,7 @@
               },
               4: '',
               5: ''
-          }
+          },
       };
       
       let treeParams = {
@@ -33,14 +32,18 @@
           4: {trad: 'Angular'},
           5: {trad: 'Vue.js'},
           6: {trad: 'ReactJS'},
-          7: {trad: 'React Native'}
+          7: {trad: 'React Native'},
       };
       
       treeMaker(tree, {
-        id: 'myTree'
-        treeParams: treeParams,
-        link_width: '4px',
-        link_color: '#2199e8'
+          id: 'myTree',
+          treeParams: treeParams,
+          card_click: function (element) {
+             console.log(element);
+          },
+          treeParams: treeParams,
+          link_width: '4px',
+          link_color: '#2199e8',
       });
       </script>
   </body>
