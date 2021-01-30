@@ -2,53 +2,11 @@
 <html>
   <head>
     <title>The Suvansinpan Family Tree</title>
-    <link rel="stylesheet" href="tree_maker-min.css">
-    <script type="text/javascript" src="tree_maker-min.js"></script>
   </head>
   <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-    <br />
-    <div class="container">
-      <h1>Family/Organization Tree Maker Example</h1>
-      <div id="myTree">
-      </div>
      <div class="container">
-       <h1>Family/Organization Prezi</h1>
-       <iframe src="https://prezi.com/embed/o5f2-rnpphru/" id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen" height="315" width="560"></iframe>
+       <h1>ครอบครัว สุวรรณสินพันธุ์</h1>
+       <iframe src="https://prezi.com/embed/o5f2-rnpphru/" id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen" height="630" width="1120" align="middle"></iframe>
       </div>
-    <script type="text/javascript">
-      let tree = {
-          1: {
-              2: '',
-              3: {
-                  6: '',
-                  7: '',
-              },
-              4: '',
-              5: ''
-          },
-      };
-      
-      let treeParams = {
-          1: {trad: 'Person 0'},
-          2: {trad: 'Person 1.0'},
-          3: {trad: 'Person 1.1'},
-          4: {trad: 'Person 1.2'},
-          5: {trad: 'Person 1.3'},
-          6: {trad: 'Person 1.1.1'},
-          7: {trad: 'Person 1.1.2'},
-      };
-      
-      treeMaker(tree, {
-          id: 'myTree',
-          treeParams: treeParams,
-          card_click: function (element) {
-             console.log(element);
-          },
-          treeParams: treeParams,
-          link_width: '4px',
-          link_color: '#2199e8',
-      });
-      </script>
   </body>
 </html>
